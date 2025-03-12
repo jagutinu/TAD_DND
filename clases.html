@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="sass/custom.css" rel="stylesheet">
+  <link rel="stylesheet" hr ef="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="css/general.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-secondary">
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <header>
+    <nav class="navbar navbar-light bg-secondary">
+      <div class="container d-flex justify-content-start">
+        <a class="navbar-brand" href="#">
+          <img src="img/logoDef.png" alt="" width="240" height="80">
+        </a>
+        <form class="d-flex">
+          <input class="form-control me-2 bg-secondary" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success btn-outline-light" type="submit">Search</button>
+        </form>
+        <a href="https://5e.tools/" title="5etools">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" fill="white" class="bi bi-0-circle"
+            viewBox="0 0 16 16">
+            <path
+              d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895" />
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+          </svg>
+        </a>
+        <a href="https://roll20.net/" title="Roll20">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" fill="white" class="bi bi-1-circle"
+            viewBox="0 0 16 16">
+            <path
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z" />
+          </svg>
+        </a>
+        <a href="https://dnd.wizards.com/es" title="DnD">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" fill="white" class="bi bi-2-circle"
+            viewBox="0 0 16 16">
+            <path
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306" />
+          </svg>
+        </a>
+        <a href="https://www.dndbeyond.com/?srsltid=AfmBOoqdm3R47u9bs_3jOxxILNAKIYk2gonwR4BuyUNzB5IlIb6Uwwui" title="DnDBeyond">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" fill="white" class="bi bi-3-circle"
+            viewBox="0 0 16 16">
+            <path
+              d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318" />
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container d-flex justify-content-start">
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="/index.html#aboutus">About Us</a></li>
+              <li><a class="dropdown-item" href="/index.html#whatisclass">What is a Class?</a></li>
+              <li><a class="dropdown-item" href="/index.html#resource">Resources</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Classes
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="/clases.html#martial">Barbarian</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Bard</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Cleric</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Druid</a></li>
+              <li><a class="dropdown-item" href="/clases.html#martial">Fighter</a></li>
+              <li><a class="dropdown-item" href="/clases.html#martial">Monk</a></li>
+              <li><a class="dropdown-item" href="/clases.html#half">Paladin</a></li>
+              <li><a class="dropdown-item" href="/clases.html#half">Ranger</a></li>
+              <li><a class="dropdown-item" href="/clases.html#martial">Rogue</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Sorcerer</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Warlock</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Wizard</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ol class="breadcrumb pe-5">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active text-primary" aria-current="page">Classes</li>
+    </ol>
+  </nav>
+
+  <div class="container-fluid text-center text-light py-5">
+    <h1 id="classes" class="display-1">Classes</h1>
+  </div>
+
+  <div class="row ps-5 pe-5 text-center border rounded m-5">
+    <div class="container-fluid text-center text-light py-5">
+      <h3 id="martial" class="display-3">Martials</h3>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5 col" data-bs-toggle="modal" data-bs-target="#modalBarb">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/barb.png" class="card-img-top">      
+        <div class="card-body">
+          <h4 class="card-title">Barbarian</h4>
+          <p class="card-text">Unleash your primal rage to devastate foes</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5" data-bs-toggle="modal" data-bs-target="#modalFighter">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/fighter.png" class="card-img-top" >
+        <div class="card-body">
+          <h4 class="card-title">Fighter</h4>
+          <p class="card-text">Master one or multiple weapons to finish battles quickly with an onslaught of attacks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5" data-bs-toggle="modal" data-bs-target="#modalMonk">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/monk.png" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Monk</h4>
+          <p class="card-text">Reach balance in body and mind, use your fists to manipulate the energy of life itself</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5" data-bs-toggle="modal" data-bs-target="#modalRogue">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/roque.png" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Rogue</h4>
+          <p class="card-text">Use finess and all kind of underhanded tactics to be succesful, in and out of combat</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row ps-5 pe-5 text-center border rounded m-5 justify-content-center">
+    <div class="container-fluid text-center text-light py-5">
+      <h3 id="caster" class="display-3">Casters</h3>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5" data-bs-toggle="modal" data-bs-target="#modalBard">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/bard.png" class="card-img-top">      
+        <div class="card-body">
+          <h4 class="card-title">Bard</h4>
+          <p class="card-text">Tap into the magic of creation with expresions of art</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5" data-bs-toggle="modal" data-bs-target="#modalCleric">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/cleric.png" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Cleric</h4>
+          <p class="card-text">Wield the power of divinity to bolster your allies and banish your foes</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5" data-bs-toggle="modal" data-bs-target="#modalDruid">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/druid.png" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Druid</h4>
+          <p class="card-text">Commune with nature to unleash primal magic and walk in the skins of animals</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5" data-bs-toggle="modal" data-bs-target="#modalSorc">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/sorc.png" class="card-img-top">      
+        <div class="card-body">
+          <h4 class="card-title">Sorcerer</h4>
+          <p class="card-text">Capitalize on your innate powers to bend reality to your will</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5" data-bs-toggle="modal" data-bs-target="#modalWarlock">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/warlock.png" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Warlock</h4>
+          <p class="card-text">Form a contract with an otherwordly creature and use its powers to wreak havoc</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 p-5" data-bs-toggle="modal" data-bs-target="#modalWizard">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/wizard.png" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Wizard</h4>
+          <p class="card-text">Study endless information and use it to make of reality whatever you may wish</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row ps-5 pe-5 text-center border rounded m-5 justify-content-center">
+    <div class="container-fluid text-center text-light py-5">
+      <h3 id="half" class="display-3">Half-Casters</h3>
+    </div>
+    <div class="col-lg-3 p-5" data-bs-toggle="modal" data-bs-target="#modalPaladin">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/paladin.png" class="card-img-top">      
+        <div class="card-body">
+          <h4 class="card-title">Paladin</h4>
+          <p class="card-text">Swear and oath and follow it until the bitter end to gain unmatched power</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 p-5" data-bs-toggle="modal" data-bs-target="#modalRanger">
+      <div class="card h-100 text-light bg-secondary">
+        <img src="img/ranger.png" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Ranger</h4>
+          <p class="card-text">Form an unbreakable bond with an aspect of nature and track your prey relentlessly</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Barbarian -->
+<div class="modal fade modal-lg" id="modalBarb" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="barbarianModalLabel">Barbarian</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/barb.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionBarb">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionBarb">
+              <div class="accordion-body bg-dark text-light">
+                Barbarians are mighty warriors that ignore armor in favor of raw physical power, being able to capitalize on their <strong>Rage</strong> to both resist attacks and inflict more damage. Barbarians excel on dealing single-targeted damage and resisting damage from their foes. Their main weaknesses reside in their weakness against spell casters and their reduced ranged damage. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionBarb">
+              <div class="accordion-body bg-dark text-light">
+                In comparison with other classes Barbarian is a fairly simple class, that loses any kind of ability to cast spells due to their <strong>Rage</strong>. Against other <strong>Martial</strong> classes Barbarians shine in their ability to shrug off damage, so if you wish to be the strongest, toughest(and probably dumbest) piece of meat in the batttlefield, you should try the Barbarian.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionBarb">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Barbarian. The <strong>Berserker</strong>, a madened warrior that throws caution to the wind. The <strong>Wild Heart</strong>, a warrior in comunion with magic of the world that gambles in every battle. The <strong>World Tree</strong>, that allows the Barbarian to travel great distances and resist many blows and the <strong>Zealot</strong> a Barbarian that focuses their rage through religious zealotry.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fighter -->
+<div class="modal fade modal-lg" id="modalFighter" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="fighterModalLabel">Fighter</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/fighter.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFighter">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFighter">
+              <div class="accordion-body bg-dark text-light">
+                Fighters are masters of technical battle that relly on unmatched martial prowess, deep knowledge of combat and an unrelenting spirit to overcome their opponents. Fighters are able to master every weapon they come across, find strength in the direst of moments and are able to make the highest number of attacks per round in the game thanks to their <strong>Action Surge</strong>. Fighters can be excellent at every aspect of battle if built correctly.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFighter">
+              <div class="accordion-body bg-dark text-light">
+                The strenght of this class is proportional to the imagination of it's user, but it always remains somewhat simple to play. If you wish to deal high amounts of damage, controll the battlefield, make more attacks than anyone and never give up! While not thinking much, you should probably play fighter. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFighter">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Fighter. The <strong>Battle Master</strong> that is unrivaled in plain combat. The <strong>Champion</strong>, a unbrekable stalwart. The <strong>Eldricht Knight</strong>, a fighter that combines magic and swords and the <strong>Psi Warrior</strong> a combatant that fights with their mind.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Monk -->
+<div class="modal fade modal-lg" id="modalMonk" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="monkModalLabel">Monk</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/monk.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionMonk">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionMonk">
+              <div class="accordion-body bg-dark text-light">
+                Monks are disciplined fighters capable of harnessing the power of <strong>Focus</strong> the vital energy that moves through every creature. They can use <strong>Focus</strong> to enhance themself being able to move quicker than any other class and use their own body as a weapon, or they can mess with the <strong>Focus</strong> of other creatures to stun them or move them around. Monks excell at mobility and controll of the battlefield while also being hard to hit and dishing decent amounts of damage, all while unarmored and without weapons.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionMonk">
+              <div class="accordion-body bg-dark text-light">
+                Monks stand out among other martial classes for their difficulty, many players believe the Monk to be weak, but that is not the case. Played as a Barbarian or Fighter the Monk class will falls a part quickly, but in experienced hands the Monk turns almost unbeatable. So, if you wish to dodge, run, hit, stun, hit and run again, while naked, and don't fear a little bit of complexity, give Monk a try.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFighter">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Monk. The <strong>Elements</strong> monk that as its name implies can harness fire, water, earth and air to destroy their opponents. The <strong>Mercy</strong> monk which delivers peacefull death to their opponents and salvation to their allies. The <strong>Open Hand</strong> monk that masters their own body until perfection and the <strong>Shadow</strong> monk that summons shadows to hide and strike unseen.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Rogue -->
+<div class="modal fade modal-lg" id="modalRogue" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="rogueModalLabel">Rogue</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/roque.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionRogue">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionRogue">
+              <div class="accordion-body bg-dark text-light">
+                Rogues as their name implies are any kind of fighters that go against an stablished system, although some Rogues are able to master weapons to grand extent, most Rogues relie on underhanded tactics to win battles and most importantly succed outside of it. Their <strong>Cunning Action</strong> allows them to run, hide or disengage more effectively while their <strong>Sneack Attack</strong> allows them to inflict moderate damage when strikening by surprise. However their most valuable trait is their utility out of combat, being able to be masters in which ever skills they decide.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionRogue">
+              <div class="accordion-body bg-dark text-light">
+                Although Rogues are more than capable in battle, most players that wish to excel in any specific aspect of combat will prefer the Fighter, Monk or Barbarian. Bur fret not! For the Rogue strengths lie hidden, much like the Rogue. Not only do they offer great control in battle but also they are unmatched skill monkeys being able to roll the highest skill checks in the game. So if you like playing hide'n'seek in the middle of combat and never want to fail again you should try the Rogue.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionRogue">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Rogue. The <strong>Arcane Trickster</strong>, that complements their sneacks with magic tricks. The <strong>Assasin</strong>, a master in the art of killing in one blow and poisons. The <strong>Soulknife</strong>, a Rogue that creates blades with their mind and the <strong>Thief</strong>, an archetypal Rogue that it's good at robbing, climbing and getting away.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bard -->
+<div class="modal fade modal-lg" id="modalBard" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="bardModalLabel">Bard</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/bard.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionBard">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionBard">
+              <div class="accordion-body bg-dark text-light">
+                Bard is a varied spellcasting class that is able to inspire other through different artisticals expressions such as singing, dancing, playing an instrument or even sword fighting. Bards are incredibly versatile being able to deal damage, buff allies, debuff enemies, heal and much more.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionBard">
+              <div class="accordion-body bg-dark text-light">
+                Bards are basically good at everything thanks to <strong>Jack of All Trades</strong> a skill that allows them to excell at skills that the are not even good at. On top of that their spells are honed towards supporting and through <strong>Bardic Inspiration</strong>they can bolster allies like anyone. So, if you want to play a really fun support that everyone in your party will love (and probably hate too), give Bard a try.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionBard">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Bard. The <strong>Dance</strong> Bard that focuses on mobility and agility. The <strong>Glamour</strong> Bard that dazzles their enemies with looks. The <strong>Lore</strong> Bard that collects legends all across the world gaining more spells and the <strong>Valor</strong> Bard that mixes magic with swords.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cleric -->
+<div class="modal fade modal-lg" id="modalCleric" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="clericModalLabel">Cleric</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/cleric.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionCleric">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionCleric">
+              <div class="accordion-body bg-dark text-light">
+                Clerics are spellcasters that gain their powers from devotion to a certain god, or in very specific cases devotion to an idea. Depending on the god they pray to their spells will be different and in case they fall out of grace with their deity they may loose their powers. However in exchange for their devotion they hold probably the most fearsome spelllist in the game.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionCleric">
+              <div class="accordion-body bg-dark text-light">
+                Clerics are probably one the strongest classes in the game, and there is not much to disccuss in that matter. They have access to the most powerfull healing spells and aslo the most powerfulls damagin spells while also remaining fairly simple to play and eventually thanks to <strong>Divine Intervention</strong> they can call their god to intervene. So, if you want to save your allies and put the fear of god in your enemies, try Cleric.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionCleric">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Cleric. The <strong>Life</strong> Cleric which excels at healing. The <strong>Light</strong> Cleric that deals massive amounts of fire and radiant damage. The <strong>Trickery</strong> Cleric which can create illusions to confuse their enemies and the <strong>War</strong> Cleric who is proficient in weapons and heavy armor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Druid -->
+<div class="modal fade modal-lg" id="modalDruid" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="druidModalLabel">Druid</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/druid.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFighter">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionDruid">
+              <div class="accordion-body bg-dark text-light">
+                Druids are spellcasters that focus on magic realted to nature be it plants, animal or natural disasters. By the virtues mentioned before, Druids excel at dealing area damage thanks to spells, but are also capable of supporting and healing at a very competitive level, while also using their <strong>Wildshape</strong> to turn into animals, ganing resiliance.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionDruid">
+              <div class="accordion-body bg-dark text-light">
+                Druid is one of the most balanced spellcasters, as it is incredibly capable but also requires a good basis of knowledge about the game. Nevertheless, even a new player can pick up a druid and be an excellent healer. So, if you want to heal your allies with fruit, cause a volcano to erupt or most importantly, turn into a <strong>DINOSAUR</strong>, try Druid.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionDruid">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Druid. The <strong>Land</strong> Druid which gathers power from the land the step on. The <strong>Moon</strong> Druid that empowers their animals form to fight efficiently with them. The <strong>Sea</strong> Druid which controls the powers of the sea and storms and the <strong>Stars</strong> Druid which taps into the power of celestial bodies.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sorc -->
+<div class="modal fade modal-lg" id="modalSorc" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="sorcModalLabel">Sorcerer</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/sorc.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionSorc">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionSorc">
+              <div class="accordion-body bg-dark text-light">
+                Sorcerers are spellcasters focused on damage and in lesser form, utility. The magic of the sorcerer comes either from their boodline or from some event that happened at their birth, which is to say, all their power is innate, no training or learning necessary. Thanks to <strong>Metamagic</strong> they can alter their spells in unheard ways to cause unrivaled amounts of destruction.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSorc">
+              <div class="accordion-body bg-dark text-light">
+                To be blunt, Sorcerers are simpler Wizards. Which don't get me wrong, is not a bad thing, after all being similar to the strongest class in the game but easier to play is a great selling point to new players. Sorcerers can cast all kind of spells but due to their limited number of spells learned they often focus damaging spells to combo with their <strong>Metamagic</strong>. So if you wan to just be talented enough to rival a Wizard that has studied for 80 years, try Sorcerer.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionSorc">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Sorcerer. The <strong>Aberrant</strong> Sorcerer which talents focus on Lovecraftian abilities. The <strong>Clockworck</strong> Sorcerer that values order and control. The <strong>Draconic</strong> Sorcerer which masters the power of dragons and the <strong>Wild Magic</strong> Sorcerer, a subclass that allows your magic to run wild.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Warlock -->
+<div class="modal fade modal-lg" id="modalWarlock" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="warlockModalLabel">Warlock</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/warlock.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionWarlock">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionWarlock">
+              <div class="accordion-body bg-dark text-light">
+                Warlocks are spellcasters that form a contract with an otherwordly being such as a Devil or an Angel to gain magical powers. Warlocks are limited in the number of spells in comparison with other casters, but can regain said spells quickly and can dable in swordplay with ease.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionWarlock">
+              <div class="accordion-body bg-dark text-light">
+                Warlocks are tricky, one hand you are tied to your patron and must follow their will to some extent and in the other hanf you have basically cheated your way into one of the most powerfull classes in the game being able to do high amounts of damage through spells or swords, having great controll and utility and in some cases being able to heal. So if you love reading within the lines and blasting, try Warlock.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionWarlock">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Warlock. The <strong>Archfey</strong> which forms a contract with a powerful fey. The <strong>Celestial</strong> that forms a contract with an Angel to gain celestial powers to heal. The <strong>Fiend</strong> which forms a contract with a Devil or Demon to command hellfire and the <strong>Great Old One</strong> which forms a contract with, basically, Cthullu. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Wizard -->
+<div class="modal fade modal-lg" id="modalWizard" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="wizardModalLabel">Wizard</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/wizard.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionWizard">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionWizard">
+              <div class="accordion-body bg-dark text-light">
+                The Wizard is probably the strongest class in the game, surpassing even the Cleric. There is a very simple reason for this, a Wizard is a spellcaster that gains power by learning, which translates to the in-game capacity of the Wizard to learn any spell in the game, that combined with the biggest spelllist in the games makes the wizard a true menace.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionWizard">
+              <div class="accordion-body bg-dark text-light">
+                The Wizard is the definitive spell swiss-army-knife. No matter the situation the wizard has a spell for it, which means that the Wizard can deal great amounts of damage or even better end the combat inmediately with a well placed controll spell. The only weakness of the Wizard is their diffculty to play, being the hardest class to play. So, if you think you have big enough brain, dare to play the Wizard.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionWizard">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Wizard. The <strong>Abjurer</strong> which focuses on protective magic. The <strong>Diviner</strong> that tries to peek into the future. The <strong>Evoker</strong> which favors destructive magic and the <strong>Illusionist</strong> which creates illusions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Paladin -->
+<div class="modal fade modal-lg" id="modalPaladin" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="paladinModalLabel">Paladin</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/paladin.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionPaladin">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPaladin">
+              <div class="accordion-body bg-dark text-light">
+                Paladins like Rangers, combine martial prowess with a reduced spellcasting capability. Paladins specifically swear an oath to a concept or a set of values, and if followed, their unbreakable devotion for their oath grants the Paladin their powers.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPaladin">
+              <div class="accordion-body bg-dark text-light">
+                Paladins come very close to the Wizard in power, without being a full spellcaster, their are pretty well rounded. The do very good damage, are hard to hit, can heal themselves and thier allies, can surpass most spells and have some forms of controll. Their main weakness are their lack of ranged and area damage. So, if you want to believe so hard in something that you gain superpowers, try Paladin.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionPaladin">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Paladin. The <strong>Ancients</strong> Paladin which swear to preotect nature and all beautiful things. The <strong>Devotion</strong> Paladin that swears to always do the right thing. The <strong>Glory</strong> Paladin which swears to achieve glory and be an example for all and the <strong>Vengeance</strong> Paladin sich swears to right the wrongs and punish the wicked.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ranger -->
+<div class="modal fade modal-lg" id="modalRanger" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-light bg-dark">
+      <div class="modal-header border-0"> 
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <h1 class="modal-title text-center" id="rangerModalLabel">Ranger</h1>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="img/ranger.png" class="img-fluid w-100">
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionRanger">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Description
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionRanger">
+              <div class="accordion-body bg-dark text-light">
+                Rangers like Paladins mix spellcasting with combat prowess. Rangers form bonds with different aspects of nature, and use the abilities they gain to track their prey so that the world they choose as their own remains safe.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Is it for you?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionRanger">
+              <div class="accordion-body bg-dark text-light">
+                Rangers are mainly a damage focused class with high amounts of utility and a decent amount of healing. In terms of combat, don't let their name confuse you, for they are proficient both in melee and ranged combat. So, if you really like your dog and won't give up chasing, try Ranger.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Subclasses
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionRanger">
+              <div class="accordion-body bg-dark text-light">
+                The 2024 PHB comprehends 4 subclasses for the Ranger. The <strong>Beast Master</strong> is a Ranger that forms a bond with a spirit of nature that takes the forms of animals and aids in battle. The <strong>Fey Wanderer</strong> is a Ranger that forms a bond with the plane of the fey gaining elusive powers. The <strong>Gloom Stalker</strong> is a Ranger that forms a bond with the dark places of nature, using their power to stalk aberrations of the dark and the <strong>Hunter</strong> which is dedicated to the hunt, to protect civilization.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

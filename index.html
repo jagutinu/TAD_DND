@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="sass/custom.css" rel="stylesheet">
+  <link rel="stylesheet" hr ef="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="css/general.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-secondary">
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <header>
+    <nav class="navbar navbar-light bg-secondary">
+      <div class="container d-flex justify-content-start">
+        <a class="navbar-brand" href="#">
+          <img src="img/logoDef.png" alt="" width="240" height="80">
+        </a>
+        <form class="d-flex">
+          <input class="form-control me-2 bg-secondary" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success btn-outline-light" type="submit">Search</button>
+        </form>
+        <a href="https://5e.tools/" title="5etools">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" fill="white" class="bi bi-0-circle"
+            viewBox="0 0 16 16">
+            <path
+              d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895" />
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+          </svg>
+        </a>
+        <a href="https://roll20.net/" title="Roll20">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" fill="white" class="bi bi-1-circle"
+            viewBox="0 0 16 16">
+            <path
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z" />
+          </svg>
+        </a>
+        <a href="https://dnd.wizards.com/es" title="DnD">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" fill="white" class="bi bi-2-circle"
+            viewBox="0 0 16 16">
+            <path
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306" />
+          </svg>
+        </a>
+        <a href="https://www.dndbeyond.com/?srsltid=AfmBOoqdm3R47u9bs_3jOxxILNAKIYk2gonwR4BuyUNzB5IlIb6Uwwui"
+          title="DnDBeyond">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" fill="white" class="bi bi-3-circle"
+            viewBox="0 0 16 16">
+            <path
+              d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318" />
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container d-flex justify-content-start">
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="/index.html#aboutus">About Us</a></li>
+              <li><a class="dropdown-item" href="/index.html#whatisclass">What is a Class?</a></li>
+              <li><a class="dropdown-item" href="/index.html#resource">Resources</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Classes
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="/clases.html#martial">Barbarian</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Bard</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Cleric</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Druid</a></li>
+              <li><a class="dropdown-item" href="/clases.html#martial">Fighter</a></li>
+              <li><a class="dropdown-item" href="/clases.html#martial">Monk</a></li>
+              <li><a class="dropdown-item" href="/clases.html#half">Paladin</a></li>
+              <li><a class="dropdown-item" href="/clases.html#half">Ranger</a></li>
+              <li><a class="dropdown-item" href="/clases.html#martial">Rogue</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Sorcerer</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Warlock</a></li>
+              <li><a class="dropdown-item" href="/clases.html#caster">Wizard</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ol class="breadcrumb pe-5">
+      <li class="breadcrumb-item active text-primary" aria-current="page">Home</li>
+    </ol>
+  </nav>
+  <div class="container-fluid text-center text-light py-5">
+    <h1 id="aboutus" class="display-1">About Us</h1>
+    <img src="/img/logoDef.png" class="img-fluid" alt="">
+    <p>Hey! In case you have stumbled upon this page and the image right above hasn't queued you in yet, I'd like to
+      tell you what this page is about. Well, like the name suggests this page is about Dungeons and Dragons the famous
+      TTRPG! More specifically this page offers information about the different classes within the game. What is a
+      class? Which are the classes? What is this class about? and most importantly Which class should I pick? are all
+      questions this page aims to answer so if you have any of them stick around!</p>
+  </div>
+  <div class="container-fluid text-center text-light py-5">
+    <h1 id="whatisclass" class="display-1">What is a Class?</h1>
+    <p>In Dungeons and Dragons characters created by players embarq on quest and live many adventures, and one of the
+      first steps in said character creation is to choose a class. Classes are an ensemble of abilitys and features that
+      allow players to live different fantasies of power. For example, a player might want to create a skilled swordsman
+      in which case he would probably pick the class Fighter, while a player that whishes to be play as a wise
+      spellcaster may choose the class Druid. In Dungeons and Dragons there is 12 classes that can be divided in 3
+      groups, Martials, Casters and Half-Casters</p>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="/clases.html#martial">
+            <img src="img/martials.png" class="d-block w-100">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h4>MARTIALS</h4>
+            <p>Use your body and skill to dominate combat</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="/clases.html#caster">
+            <img src="img/casters.png" class="d-block w-100">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h4>CASTERS</h4>
+            <p>Tap into the power of spellcasting to bend reality to your will</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="/clases.html#half">
+            <img src="img/halfcasters.png" class="d-block w-100">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h4>HALF-CASTERS</h4>
+            <p>Magic or Swords? Why not both?</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h3>Make shure to click on the slides or the button below to learn more</h3>
+    <a class="btn btn-primary btn-light" data-bs-toggle="offcanvas" href="#offcanvasClasses" role="button"
+      aria-controls="offcanvasClasses">
+      Classes
+    </a>
+    <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="offcanvasClasses"
+      aria-labelledby="offcanvasClassesLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasClassesLabel">Classes</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Chose a class to start learning
+        </div>
+        <div class="list-group list-group-flush container-fluid py-4">
+          <a href="/clases.html"
+            class="list-group-item list-group-item-action bg-dark text-light border-light">Barbarian</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Bard</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Cleric</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Druid</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Fighter</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Monk</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Paladin</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Ranger</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Rogue</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Sorcerer</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Warlock</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-light">Wizard</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid"></div>
+  <div class="container-fluid text-center text-light py-5">
+    <h1 id="resource" class="display-1">Resources</h1>
+    <h5>Quick resource guide for the icons at the top of the page</h5>
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Number</th>
+          <th scope="col">Plataform</th>
+          <th scope="col">Function</th>
+          <th scope="col">Freemium</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">0</th>
+          <td>5etools</td>
+          <td>DnD Books</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Roll20</td>
+          <td>Play with friends</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>DnD</td>
+          <td>DnD Books</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>DnDBeyond</td>
+          <td>Play with friends</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer class="bg-dark">
+    <div class="py-5 bg-dark">
+    </div>
+  </footer>
+
+</body>
+
+</html>
